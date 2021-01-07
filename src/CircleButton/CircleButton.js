@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { any } from 'prop-types';
 import './CircleButton.css';
 
 export default function NavCircleButton(props) {
@@ -22,5 +22,5 @@ NavCircleButton.defaultProps ={
 NavCircleButton.propTypes = {
   className: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  tag: PropTypes.func.isRequired
+  tag: any
 }
